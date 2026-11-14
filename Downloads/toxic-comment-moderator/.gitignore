@@ -1,0 +1,22 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter & Colab
+.ipynb_checkpoints/
+
+# Large Datasets & Model Artifacts (Track code, not heavy binaries)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+
+# OS Files
+.DS_Store
+Thumbs.db
