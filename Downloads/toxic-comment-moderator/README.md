@@ -27,3 +27,12 @@ python scripts/download_data.py
 
 # 4. Generate deterministic 5-fold stratified split
 python -m src.create_folds
+
+## Model Progression Benchmarks
+
+| Phase | Model Architecture | 5-Fold OOF ROC AUC | CPU Latency (ms/msg) | Status |
+| :--- | :--- | :---: | :---: | :--- |
+| **Phase 3** | Word + Char TF-IDF + Logistic Regression | `0.98631` | `1.98 ms/msg` | Completed |
+| **Phase 4** | FastText + BiGRU (Dual Pooling) | *Pending* | *Pending* | In Progress |
+| **Phase 5** | Fine-Tuned Transformer (`DeBERTa-v3` / `ModernBERT`) | *Pending* | *Pending* | Planned |
+| **Phase 6** | ONNX INT8 Quantized Transformer | *Pending* | *Pending* | Planned |
